@@ -3,7 +3,7 @@ import ardyat1png from "../assets/cleaners/ardyat1.png";
 const products = [
 
     {
-        id: 18,
+        id: 16,
         name: "منظف ارضيات 600 م",
         price: 75,
         category: "المنظفات",

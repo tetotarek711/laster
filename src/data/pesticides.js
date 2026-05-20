@@ -120,7 +120,7 @@ const products = [
 
   {
     id: 14,
-    name: "مبيد البراغيث",
+    name: "مبيد البراغيث والفاش والحشرات الغير مرئية",
     price: 105,
     category: "المبيدات",
     image: pragetpng,
