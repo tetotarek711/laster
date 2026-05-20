@@ -3,6 +3,10 @@ import pesticidesImg from "./assets/Pesticides.png";
 import cleanersImg from "./assets/Detergents.png";
 import perfumesImg from "./assets/perfumes.png";
 import skinImg from "./assets/Beauty.png";
+import elnamlImg from "./assets/elnaml.png";
+import bugImg from "./assets/bugs.jpg";
+import cockroachImg from "./assets/cockroach.jpg";
+import mosquitoImg from "./assets/mosquito.jpg";
 export default function App() {
 
   const categories = [
@@ -24,39 +28,48 @@ export default function App() {
   },
 ];
 
-  const products = [
-    
-    {
-      id: 1,
-      name: "مبيد النمل",
-      price: 100,
-      category: "المبيدات",
-    },
-    {
-      id: 2,
-      name: "مبيد البق",
-      price: 120,
-      category: "المبيدات",
-    },
-    {
-      id: 3,
-      name: "منظف أرضيات",
-      price: 80,
-      category: "المنظفات",
-    },
-    {
-      id: 4,
-      name: "معطر",
-      price: 90,
-      category: "المعطرات",
-    },
-    {
-      id: 5,
-      name: "شاور جل",
-      price: 110,
-      category: "العناية بالبشرة",
-    },
-  ];
+const products = [
+
+  {
+    id: 1,
+    name: "مبيد النمل",
+    price: 100,
+    category: "المبيدات",
+    image: elnamlImg,
+  },
+
+  {
+    id: 2,
+    name: "مبيد البق",
+    price: 120,
+    category: "المبيدات",
+    image: elpakImg,
+  },
+
+  {
+    id: 3,
+    name: "مبيد الصراصير",
+    price: 150,
+    category: "المبيدات",
+    image: sraserImg,
+  },
+
+  {
+    id: 4,
+    name: "مبيد الناموس",
+    price: 130,
+    category: "المبيدات",
+    image: elnamosImg,
+  },
+
+  {
+    id: 5,
+    name: "منظف أرضيات",
+    price: 80,
+    category: "المنظفات",
+  },
+
+];
 const deliveryPrices = {
   "القاهرة الجديدة": 120,
   "القاهرة": 105,
@@ -199,9 +212,13 @@ const finalTotal =
                   className="bg-white rounded-3xl shadow-lg overflow-hidden"
                 >
 
-                  <div className="h-52 bg-sky-100 flex items-center justify-center">
-                    صورة المنتج
-                  </div>
+                  
+                      <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-52 object-cover"
+                  />
+                  
 
                   <div className="p-5">
 
