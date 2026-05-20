@@ -78,39 +78,60 @@ const deliveryPrices = {
   "الشيخ زايد": 120,
 };
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [cart, setCart] = useState(() => {
+const [cart, setCart] = useState(() => {
   const savedCart = localStorage.getItem("cart");
 
   return savedCart
     ? JSON.parse(savedCart)
     : [];
 });
-  const [selectedCity, setSelectedCity] = useState("");
-  const [customerName, setCustomerName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
-  const [search, setSearch] = useState("");
-  const [page, setPage] = useState("home");
+
+const [selectedCity, setSelectedCity] = useState("");
+const [customerName, setCustomerName] = useState("");
+const [phone, setPhone] = useState("");
+const [address, setAddress] = useState("");
+const [search, setSearch] = useState("");
+const [page, setPage] = useState("home");
+
+const [showToast, setShowToast] =
+  useState(false);
   const addToCart = (product) => {
 
-    const found = cart.find((item) => item.id === product.id);
+  const found = cart.find(
+    (item) => item.id === product.id
+  );
 
-    if (found) {
+  if (found) {
 
-      const updatedCart = cart.map((item) =>
-        item.id === product.id
-          ? { ...item, qty: item.qty + 1 }
-          : item
-      );
+    const updatedCart = cart.map((item) =>
+      item.id === product.id
+        ? {
+            ...item,
+            qty: item.qty + 1,
+          }
+        : item
+    );
 
-      setCart(updatedCart);
+    setCart(updatedCart);
 
-    } else {
+  } else {
 
-      setCart([...cart, { ...product, qty: 1 }]);
+    setCart([
+      ...cart,
+      {
+        ...product,
+        qty: 1,
+      },
+    ]);
 
-    }
-  };
+  }
+
+  setShowToast(true);
+
+  setTimeout(() => {
+    setShowToast(false);
+  }, 2000);
+};
 
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.qty,
@@ -139,7 +160,11 @@ const finalTotal =
   return (
 
     <div className="min-h-screen bg-sky-50" dir="rtl">
-
+{showToast && (
+  <div className="fixed bottom-5 left-5 bg-green-500 text-white px-6 py-3 rounded-2xl shadow-2xl z-50 text-lg font-bold">
+    تمت إضافة المنتج للسلة ✅
+  </div>
+)}
       <header className="bg-sky-500 text-white p-5 shadow-lg">
 
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
@@ -158,11 +183,17 @@ const finalTotal =
       </button>
 
       <button
-        onClick={() => setPage("cart")}
-        className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
-      >
-        السلة 🛒
-      </button>
+  onClick={() => setPage("cart")}
+  className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
+>
+  السلة 🛒 {
+    cart.reduce(
+      (total, item) =>
+        total + item.qty,
+      0
+    )
+  }
+</button>
 
       <button
         className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
@@ -298,12 +329,16 @@ const finalTotal =
                     <button
   onClick={() => addToCart(product)}
   className={`w-full mt-5 py-3 rounded-2xl font-bold transition ${
-    cart.find((item) => item.id === product.id)
+    cart.find(
+      (item) => item.id === product.id
+    )
       ? "bg-green-500 text-white"
       : "bg-sky-500 hover:bg-sky-600 text-white"
   }`}
 >
-  {cart.find((item) => item.id === product.id)
+  {cart.find(
+    (item) => item.id === product.id
+  )
     ? "تمت الإضافة ✅"
     : "أضف للسلة"}
 </button>
