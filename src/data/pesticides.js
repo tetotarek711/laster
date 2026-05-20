@@ -1,7 +1,7 @@
-import elnamlImg from "../assets/elnaml.png";
-import elpakImg from "../assets/elpak.png";
-import sraserImg from "../assets/sraser.png";
-import elnamosImg from "../assets/elnamos.png";
+import elnamlImg from "../assets/pesticides/elnaml.png";
+import elpakImg from "../assets/pesticides/elpak.png";
+import sraserImg from "../assets/pesticides/sraser.png";
+import elnamosImg from "../assets/pesticides/elnamos.png";
 
 const products = [
 

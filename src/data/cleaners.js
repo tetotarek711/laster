@@ -1,13 +1,13 @@
-import elnamlImg from "../assets/elnaml.png";
+import elnamlImg from "../assets/cleaners/ardyat1.png";
 
 const products = [
 
     {
-        id: 1,
+        id: 5,
         name: "منظف ارضيات 600 م",
         price: 100,
         category: "المنظفات",
-        image: elnamlImg,
+        image: ardyat1png,
       },
 
       ];
