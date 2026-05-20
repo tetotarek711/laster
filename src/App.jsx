@@ -237,11 +237,12 @@ const finalTotal =
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {products
-            
-              .filter((product) =>
-  product.name.includes(search)
-)
-              .map((product) => (
+  .filter(
+    (product) =>
+      product.category === selectedCategory &&
+      product.name.includes(search)
+  )
+  .map((product) => (
 
                 <div
                   key={product.id}
