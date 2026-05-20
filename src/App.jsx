@@ -115,6 +115,14 @@ const delivery =
 
 const finalTotal =
   totalPrice + delivery;
+
+  const isFormValid =
+  customerName &&
+  phone &&
+  address &&
+  selectedCity &&
+  cart.length > 0;
+
   return (
 
     <div className="min-h-screen bg-sky-50" dir="rtl">
@@ -481,6 +489,7 @@ const finalTotal =
 ></textarea>
 
 <button
+disabled={!isFormValid}
   onClick={() => {
 
     const orderText = cart
@@ -504,7 +513,13 @@ const finalTotal =
       "_blank"
     );
   }}
-  className="w-full mt-8 bg-sky-500 hover:bg-sky-600 text-white py-4 rounded-2xl text-2xl font-bold"
+  className={`w-full mt-8 py-4 rounded-2xl text-2xl font-bold transition
+
+${
+  isFormValid
+    ? "bg-sky-500 hover:bg-sky-600 text-white"
+    : "bg-gray-400 text-white cursor-not-allowed"
+}`}
 >
   تأكيد الطلب
 </button>
