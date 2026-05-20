@@ -4,6 +4,9 @@ import cleanersImg from "./assets/Detergents.png";
 import perfumesImg from "./assets/perfumes.png";
 import skinImg from "./assets/Beauty.png";
 import elnamlImg from "./assets/elnaml.png";
+import elpakImg from "./assets/elpak.png";
+import sraserImg from "./assets/sraser.png";
+import elnamosImg from "./assets/elnamos.png";
 export default function App() {
 
   const categories = [
