@@ -1,8 +1,18 @@
-import elnamlImg from "../assets/pesticides/elnaml.png";
-import elpakImg from "../assets/pesticides/elpak.png";
-import sraserImg from "../assets/pesticides/sraser.png";
-import elnamosImg from "../assets/pesticides/elnamos.png";
-
+import elnamlpng from "../assets/pesticides/elnaml.png";
+import elpakpng from "../assets/pesticides/elpak.png";
+import sraserpng from "../assets/pesticides/sraser.png";
+import elnamospng from "../assets/pesticides/elnamos.png";
+import zopappng from "../assets/pesticides/zopappng.png";
+import aatapng from "../assets/pesticides/aatapng.png";
+import akareppng from "../assets/pesticides/akarep.png";
+import anakeppng from "../assets/pesticides/anakep.png";
+import apraspng from "../assets/pesticides/apras.png";
+import feranpng from "../assets/pesticides/feran.png";
+import koradpng from "../assets/pesticides/korad.png";
+import fishpng from "../assets/pesticides/fish.png";
+import sospng from "../assets/pesticides/sos.png";
+import gelpng from "../assets/pesticides/gel.png";
+import pragetpng from "../assets/pesticides/praget.png";
 const products = [
 
   {
@@ -36,7 +46,95 @@ const products = [
     category: "المبيدات",
     image: elnamosImg,
   },
+{
+    id: 5,
+    name: "مبيد الذباب",
+    price: 75,
+    category: "المبيدات",
+    image: zopappng,
+  },
 
+  {
+    id: 6,
+    name: "مبيد العثه",
+    price: 105,
+    category: "المبيدات",
+    image: aatapng,
+  },
+
+  {
+    id: 7,
+    name: "بودرة عقارب 250 م",
+    price: 65,
+    category: "المبيدات",
+    image: akareppng,
+  },
+
+  {
+    id: 8,
+    name: "جل الابراص",
+    price: 80,
+    category: "المبيدات",
+    image: gelpng,
+  },
+
+  {
+    id: 9,
+    name: "مبيد الابراص",
+    price: 80,
+    category: "المبيدات",
+    image: apraspng,
+  },
+
+  {
+    id: 10,
+    name: "مبيد السوس",
+    price: 105,
+    category: "المبيدات",
+    image: sospng,
+  },
+
+  {
+    id: 11,
+    name: "مبيد العناكب",
+    price: 105,
+    category: "المبيدات",
+    image: anakeppng,
+  },
+
+  {
+    id: 12,
+    name: "مبيد القراض",
+    price: 105,
+    category: "المبيدات",
+    image: koradpng,
+  },
+
+  {
+    id: 13,
+    name: "مبيد السمكة الفضية",
+    price: 105,
+    category: "المبيدات",
+    image: fishpng,
+  },
+
+  {
+    id: 14,
+    name: "مبيد البراغيث",
+    price: 105,
+    category: "المبيدات",
+    image: pragetpng,
+  },
+
+  {
+    id: 15,
+    name: "عجينة الفئران بطعم الفراولة",
+    price: 50,
+    category: "المبيدات",
+    image: feranpng,
+  },
+
+  
  
 ];
 
