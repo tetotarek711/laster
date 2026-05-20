@@ -2,10 +2,10 @@ import secrit2png from "../assets/perfumes/secrit2.png";
 import areeg2png from "../assets/perfumes/areeg2.png";
 import bedrom1png from "../assets/perfumes/bedrom1.png";
 import bedrom2png from "../assets/perfumes/bedrom2.png";
-import laster12png from "../assets/perfumes/laster12.png";
+import laster12PNG from "../assets/perfumes/laster12.PNG";
 import pasrom1png from "../assets/perfumes/pasrom1.png";
 import prengo2png from "../assets/perfumes/prengo2.png";
-import room2png from "../assets/perfumes/room2.png";
+import room2PNG from "../assets/perfumes/room2.PNG";
 import secrit1png from "../assets/perfumes/secrit1.png";
 import soir2png from "../assets/perfumes/soir2.png";
 import toot2png from "../assets/perfumes/toot2.png";
@@ -48,7 +48,7 @@ const products = [
         name: "معطر لاستر عبوة 500 مل",
         price: 70,
         category: "المعطرات",
-        image: laster12png,
+        image: laster12PNG,
       },
 
       {
@@ -81,7 +81,7 @@ const products = [
         name: "معطر خام حليبى مركز نص لتر",
         price: 80,
         category: "المعطرات",
-        image: room2png,
+        image: room2PNG,
       },
 
       {
