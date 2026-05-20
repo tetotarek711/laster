@@ -5,6 +5,8 @@ import skin from "./skin";
 const products = [
   ...pesticides,
   ...cleaners,
+  ...skin,
+  ...perfumes,
 ];
 
 export default products;
