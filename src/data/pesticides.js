@@ -7,8 +7,8 @@ const products = [
 
   {
     id: 1,
-    name: "مبيد النمل",
-    price: 100,
+    name: "مبيد عام للحشرات",
+    price: 130,
     category: "المبيدات",
     image: elnamlImg,
   },
@@ -16,15 +16,15 @@ const products = [
   {
     id: 2,
     name: "مبيد البق",
-    price: 120,
+    price: 110,
     category: "المبيدات",
     image: elpakImg,
   },
 
   {
     id: 3,
-    name: "مبيد الصراصير",
-    price: 150,
+    name: "مبيد النمل والصراصير",
+    price: 105,
     category: "المبيدات",
     image: sraserImg,
   },
@@ -32,7 +32,7 @@ const products = [
   {
     id: 4,
     name: "مبيد الناموس",
-    price: 130,
+    price: 75,
     category: "المبيدات",
     image: elnamosImg,
   },
