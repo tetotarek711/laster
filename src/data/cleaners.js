@@ -5,7 +5,7 @@ const products = [
     {
         id: 5,
         name: "منظف ارضيات 600 م",
-        price: 100,
+        price: 75,
         category: "المنظفات",
         image: ardyat1png,
       },
