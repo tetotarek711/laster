@@ -527,7 +527,18 @@ ${
         </section>
 
       )}
+    <button
+  onClick={() => setPage("cart")}
+  className="fixed left-5 bottom-5 bg-sky-500 hover:bg-sky-600 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl z-50 animate-bounce"
+>
+  🛒
 
+  {cart.length > 0 && (
+    <span className="absolute -top-2 -right-2 bg-red-500 text-white text-sm w-7 h-7 rounded-full flex items-center justify-center font-bold">
+      {cart.length}
+    </span>
+  )}
+</button>
     </div>
   );
 }
