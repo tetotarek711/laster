@@ -20,7 +20,7 @@ const products = [
     name: "مبيد عام للحشرات",
     price: 130,
     category: "المبيدات",
-    image: elnamlImg,
+    image: elnamlpng,
   },
 
   {
@@ -28,7 +28,7 @@ const products = [
     name: "مبيد البق",
     price: 110,
     category: "المبيدات",
-    image: elpakImg,
+    image: elpakpmg,
   },
 
   {
@@ -36,7 +36,7 @@ const products = [
     name: "مبيد النمل والصراصير",
     price: 105,
     category: "المبيدات",
-    image: sraserImg,
+    image: sraserpmg,
   },
 
   {
@@ -44,7 +44,7 @@ const products = [
     name: "مبيد الناموس",
     price: 75,
     category: "المبيدات",
-    image: elnamosImg,
+    image: elnamospmg,
   },
 {
     id: 5,
