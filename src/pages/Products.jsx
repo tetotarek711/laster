@@ -475,7 +475,7 @@ disabled={!isFormValid}
       `الإجمالي النهائي: ${finalTotal} ج`;
 
     window.open(
-      `https://wa.me/201556827635?text=${message}`,
+      `https://wa.me/201113630502?text=${message}`,
       "_blank"
     );
     setCart([]);

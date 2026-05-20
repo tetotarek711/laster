@@ -11,11 +11,11 @@ export default function Wholesale() {
         </h1>
 
         <p className="text-2xl leading-loose text-gray-700">
-          للتعامل بالجملة والتوزيع يرجى التواصل معنا عبر واتساب.
+          للتعامل بالجملة والتوزيع يرجى التواصل معنا هاتفيا 01113630502 او عبر واتساب.
         </p>
 
         <a
-          href="https://wa.me/201556827635"
+          href="https://wa.me/201113630502"
           target="_blank"
           className="block mt-10 bg-green-500 hover:bg-green-600 text-white text-center py-5 rounded-2xl text-2xl font-bold"
         >
