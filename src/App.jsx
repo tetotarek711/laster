@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import pesticidesImg from "./assets/Pesticides.png";
 import cleanersImg from "./assets/Detergents.png";
 import perfumesImg from "./assets/perfumes.png";
@@ -78,7 +78,13 @@ const deliveryPrices = {
   "الشيخ زايد": 120,
 };
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+  const savedCart = localStorage.getItem("cart");
+
+  return savedCart
+    ? JSON.parse(savedCart)
+    : [];
+});
   const [selectedCity, setSelectedCity] = useState("");
   const [customerName, setCustomerName] = useState("");
   const [phone, setPhone] = useState("");
@@ -122,6 +128,13 @@ const finalTotal =
   address &&
   selectedCity &&
   cart.length > 0;
+
+  useEffect(() => {
+  localStorage.setItem(
+    "cart",
+    JSON.stringify(cart)
+  );
+}, [cart]);
 
   return (
 
@@ -283,11 +296,17 @@ const finalTotal =
                     </p>
 
                     <button
-                      onClick={() => addToCart(product)}
-                      className="w-full mt-5 bg-sky-500 hover:bg-sky-600 text-white py-3 rounded-2xl font-bold"
-                    >
-                      أضف للسلة
-                    </button>
+  onClick={() => addToCart(product)}
+  className={`w-full mt-5 py-3 rounded-2xl font-bold transition ${
+    cart.find((item) => item.id === product.id)
+      ? "bg-green-500 text-white"
+      : "bg-sky-500 hover:bg-sky-600 text-white"
+  }`}
+>
+  {cart.find((item) => item.id === product.id)
+    ? "تمت الإضافة ✅"
+    : "أضف للسلة"}
+</button>
 
                   </div>
 
