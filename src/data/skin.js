@@ -1,5 +1,5 @@
-import elnamlImg from "../assets/skin/arz.png";
-import elnamlImg from "../assets/skin/shapa.png";
+import arzimg from "../assets/skin/arz.png";
+import shapaimg from "../assets/skin/shapa.png";
 const products = [
 
     {
@@ -7,7 +7,7 @@ const products = [
         name: "صابونة الارز",
         price: 85,
         category: "العناية بالبشرة",
-        image: arz,
+        image: arzimg,
       },
 
       {
@@ -15,7 +15,7 @@ const products = [
         name: "صابونة الشبه الزرقاء",
         price: 85,
         category: "العناية بالبشرة",
-        image: shapa,
+        image: shapaimg,
       },
 
       ];

@@ -1,4 +1,4 @@
-import elnamlImg from "../assets/perfumes/secrit1.png";
+import secrit1img from "../assets/perfumes/secrit1.png";
 
 const products = [
 
@@ -7,7 +7,7 @@ const products = [
         name: "سيكريت 300م",
         price: 50,
         category: "المعطرات",
-        image: secrit1,
+        image: secrit1img,
       },
 
       ];
