@@ -1,4 +1,4 @@
-import ardyat1ing from "../assets/cleaners/ardyat1.png";
+import ardyat1png from "../assets/cleaners/ardyat1.png";
 
 const products = [
 
@@ -7,7 +7,7 @@ const products = [
         name: "منظف ارضيات 600 م",
         price: 100,
         category: "المنظفات",
-        image: ardyat1ing,
+        image: ardyat1png,
       },
 
       ];
