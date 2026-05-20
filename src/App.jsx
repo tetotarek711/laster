@@ -84,6 +84,7 @@ const deliveryPrices = {
   const [phone, setPhone] = useState("");
   const [address, setAddress] = useState("");
   const [search, setSearch] = useState("");
+  const [page, setPage] = useState("home");
   const addToCart = (product) => {
 
     const found = cart.find((item) => item.id === product.id);
@@ -120,19 +121,39 @@ const finalTotal =
 
       <header className="bg-sky-500 text-white p-5 shadow-lg">
 
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+  <div className="max-w-7xl mx-auto flex justify-between items-center">
 
-          <h1 className="text-4xl font-bold">
-            Laster
-          </h1>
+    <h1 className="text-4xl font-bold">
+      Laster
+    </h1>
 
-          <div className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold">
-            🛒 {cart.length}
-          </div>
+    <div className="flex gap-4 items-center">
 
-        </div>
+      <button
+        onClick={() => setPage("home")}
+        className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
+      >
+        الرئيسية
+      </button>
 
-      </header>
+      <button
+        onClick={() => setPage("cart")}
+        className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
+      >
+        السلة 🛒
+      </button>
+
+      <button
+        className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
+      >
+        الجملة
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
 
       <section className="bg-gradient-to-l from-sky-400 to-sky-200 py-24 text-center text-white">
 
@@ -145,6 +166,9 @@ const finalTotal =
         </p>
 
       </section>
+       
+       {page === "home" && (
+         <>
 
       <section className="max-w-7xl mx-auto py-20 px-5">
 
@@ -174,11 +198,17 @@ const finalTotal =
     </h3>
 
     <button
-      onClick={() => setSelectedCategory(category.name)}
-      className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-2xl font-bold"
-    >
-      دخول القسم
-    </button>
+  onClick={() => {
+    setSelectedCategory(category.name);
+    window.scrollTo({
+      top: 700,
+      behavior: "smooth",
+    });
+  }}
+  className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-2xl font-bold"
+>
+  دخول القسم
+</button>
 
   </div>
 
@@ -208,10 +238,8 @@ const finalTotal =
 
             {products
             
-              .filter(
-  (product) =>
-    product.category === selectedCategory &&
-    product.name.includes(search)
+              .filter((product) =>
+  product.name.includes(search)
 )
               .map((product) => (
 
@@ -256,8 +284,9 @@ const finalTotal =
         </section>
 
       )}
-
-      {cart.length > 0 && (
+  </>
+)}
+      {page === "cart" && cart.length > 0 && (
 
         <section className="max-w-5xl mx-auto py-20 px-5">
 
