@@ -4,9 +4,6 @@ import cleanersImg from "./assets/Detergents.png";
 import perfumesImg from "./assets/perfumes.png";
 import skinImg from "./assets/Beauty.png";
 import elnamlImg from "./assets/elnaml.png";
-import bugImg from "./assets/bugs.jpg";
-import cockroachImg from "./assets/cockroach.jpg";
-import mosquitoImg from "./assets/mosquito.jpg";
 export default function App() {
 
   const categories = [
