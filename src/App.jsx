@@ -121,13 +121,13 @@ const finalTotal =
 
       <header className="bg-sky-500 text-white p-5 shadow-lg">
 
-  <div className="max-w-7xl mx-auto flex justify-between items-center">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
 
     <h1 className="text-4xl font-bold">
       Laster
     </h1>
 
-    <div className="flex gap-4 items-center">
+    <div className="flex flex-wrap justify-center gap-3 items-center">
 
       <button
         onClick={() => setPage("home")}
@@ -200,10 +200,14 @@ const finalTotal =
     <button
   onClick={() => {
     setSelectedCategory(category.name);
-    window.scrollTo({
-      top: 700,
-      behavior: "smooth",
-    });
+
+    setTimeout(() => {
+      document
+        .getElementById("products-section")
+        ?.scrollIntoView({
+          behavior: "smooth",
+        });
+    }, 100);
   }}
   className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-2xl font-bold"
 >
@@ -222,7 +226,10 @@ const finalTotal =
 
       {selectedCategory && (
 
-        <section className="max-w-7xl mx-auto py-10 px-5">
+        <section
+  id="products-section"
+  className="max-w-7xl mx-auto py-10 px-5"
+>
 
           <h2 className="text-4xl font-bold text-sky-700 mb-10">
             {selectedCategory}
