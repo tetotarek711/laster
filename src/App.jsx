@@ -328,19 +328,9 @@ const finalTotal =
 
                     <button
   onClick={() => addToCart(product)}
-  className={`w-full mt-5 py-3 rounded-2xl font-bold transition ${
-    cart.find(
-      (item) => item.id === product.id
-    )
-      ? "bg-green-500 text-white"
-      : "bg-sky-500 hover:bg-sky-600 text-white"
-  }`}
+  className="w-full mt-5 bg-sky-500 hover:bg-sky-600 text-white py-3 rounded-2xl font-bold transition"
 >
-  {cart.find(
-    (item) => item.id === product.id
-  )
-    ? "تمت الإضافة ✅"
-    : "أضف للسلة"}
+  أضف للسلة
 </button>
 
                   </div>
