@@ -81,8 +81,9 @@ const deliveryPrices = {
   const [cart, setCart] = useState([]);
   const [selectedCity, setSelectedCity] = useState("");
   const [customerName, setCustomerName] = useState("");
-const [phone, setPhone] = useState("");
-const [address, setAddress] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [search, setSearch] = useState("");
   const addToCart = (product) => {
 
     const found = cart.find((item) => item.id === product.id);
@@ -196,15 +197,22 @@ const finalTotal =
           <h2 className="text-4xl font-bold text-sky-700 mb-10">
             {selectedCategory}
           </h2>
-
+           <input
+  type="text"
+  placeholder="ابحث عن منتج..."
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+  className="w-full border rounded-2xl px-5 py-4 mb-8"
+/>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
             {products
             
               .filter(
-                (product) =>
-                  product.category === selectedCategory
-              )
+  (product) =>
+    product.category === selectedCategory &&
+    product.name.includes(search)
+)
               .map((product) => (
 
                 <div
