@@ -61,12 +61,12 @@ export default function App() {
             >
               الجملة
             </NavLink>
-<Link
+<NavLink
   to="/about"
   className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
 >
   من نحن
-</Link>
+</NavLink>
           </div>
 
         </div>
