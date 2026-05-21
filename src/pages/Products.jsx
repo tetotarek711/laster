@@ -261,30 +261,28 @@ const finalTotal =
                     </p>
 {selectedProduct && (
 
-  <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+  <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-5">
 
-  <div className="bg-white w-[90%] max-w-2xl rounded-3xl p-8 relative">
+    <div className="bg-white w-full max-w-3xl rounded-3xl p-8 relative max-h-[90vh] overflow-y-auto">
 
-    <button
-      onClick={() => setSelectedProduct(null)}
-      className="absolute top-4 left-4 bg-red-500 text-white w-10 h-10 rounded-full"
-    >
-      ×
-    </button>
+      <button
+        onClick={() => setSelectedProduct(null)}
+        className="sticky top-0 bg-red-500 text-white w-10 h-10 rounded-full text-2xl"
+      >
+        ×
+      </button>
 
-    <h2 className="text-4xl font-bold text-sky-700 mb-6">
-      {selectedProduct.name}
-    </h2>
+      <h2 className="text-4xl font-bold text-sky-700 mb-8 mt-3">
+        {selectedProduct.name}
+      </h2>
 
-    <p className="text-xl leading-loose text-gray-700 whitespace-pre-line">
-      {selectedProduct.description}
-    </p>
+      <p className="text-xl leading-loose text-gray-700 whitespace-pre-line">
+        {selectedProduct.description}
+      </p>
+
+    </div>
 
   </div>
-
-</div>
-
-
 
 )}
                     <button
