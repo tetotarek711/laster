@@ -7,6 +7,7 @@ import {
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import Wholesale from "./pages/Wholesale";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -60,7 +61,12 @@ export default function App() {
             >
               الجملة
             </NavLink>
-
+<Link
+  to="/about"
+  className="bg-white text-sky-600 px-5 py-2 rounded-2xl font-bold"
+>
+  من نحن
+</Link>
           </div>
 
         </div>
@@ -83,6 +89,10 @@ export default function App() {
           path="/wholesale"
           element={<Wholesale />}
         />
+        <Route
+         path="/about"
+         element={<About />}
+/>
 
       </Routes>
 
