@@ -53,6 +53,10 @@ const [search, setSearch] = useState("");
 
 const [showToast, setShowToast] =
   useState(false);
+
+  const [selectedProduct, setSelectedProduct] =
+  useState(null);
+
   const addToCart = (product) => {
 
   const found = cart.find(
@@ -228,11 +232,22 @@ const finalTotal =
                 >
 
                   
-                      <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-52 object-cover"
-                  />
+                      <div className="relative group">
+
+  <img
+    src={product.image}
+    alt={product.name}
+    className="w-full h-52 object-cover"
+  />
+
+  <button
+    onClick={() => setSelectedProduct(product)}
+    className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-5xl"
+  >
+    🔍
+  </button>
+
+</div>
                   
 
                   <div className="p-5">
@@ -244,7 +259,38 @@ const finalTotal =
                     <p className="text-sky-600 text-3xl font-bold mt-4">
                       {product.price} ج
                     </p>
+{selectedProduct && (
 
+  <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-5">
+
+    <div className="bg-white max-w-lg w-full rounded-3xl p-8 relative">
+
+      <button
+        onClick={() => setSelectedProduct(null)}
+        className="absolute top-4 left-4 text-3xl"
+      >
+        ✕
+      </button>
+
+      <img
+        src={selectedProduct.image}
+        alt={selectedProduct.name}
+        className="w-full h-72 object-cover rounded-2xl"
+      />
+
+      <h2 className="text-3xl font-bold mt-6 text-sky-700">
+        {selectedProduct.name}
+      </h2>
+
+      <p className="text-gray-700 text-xl mt-5 leading-9">
+        {selectedProduct.description}
+      </p>
+
+    </div>
+
+  </div>
+
+)}
                     <button
   onClick={() => addToCart(product)}
   className="w-full mt-5 bg-sky-500 hover:bg-sky-600 text-white py-3 rounded-2xl font-bold transition"

@@ -21,6 +21,8 @@ const products = [
     price: 130,
     category: "المبيدات",
     image: elnamlpng,
+    description:
+    "فعال في القضاء على البق والحشرات الصغيرة وآمن للاستخدام المنزلي.",
   },
 
   {
