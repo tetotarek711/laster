@@ -8,7 +8,7 @@ const products = [
     {
         id: 46,
         name: "هاندووش- صابون لغسيل اليد  برائحة الدوف أو الورد البلدي عبوة 500 مل",
-        price: 70,
+        price: 90,
         category: "العناية بالبشرة",
         image: handwoshpng,
       },
@@ -16,7 +16,7 @@ const products = [
       {
         id: 47,
         name: "شاور جل للاستحمام برائحة الكنتالوب  لتر",
-        price: 95,
+        price: 130,
         category: "العناية بالبشرة",
         image: shawergelcantaloppng,
       },
@@ -24,7 +24,7 @@ const products = [
       {
         id: 48,
         name: "شاور جل للاستحمام برائحة الكيوي لتر  ",
-        price: 95,
+        price: 130,
         category: "العناية بالبشرة",
         image: shawerkewypng,
       },
@@ -32,7 +32,7 @@ const products = [
       {
         id: 49,
         name: "شاور جل للاستحمام مارو مكس مزيج من أقوى العطور الفرنسية لتر",
-        price: 110,
+        price: 140,
         category: "العناية بالبشرة",
         image: shawermaromexpng,
       },
@@ -40,7 +40,7 @@ const products = [
       {
         id: 50,
         name: "شاور جل للاستحمام برائحة البابايا لتر ",
-        price: 95,
+        price: 140,
         category: "العناية بالبشرة",
         image: shawerpapayapng,
       },

@@ -22,7 +22,7 @@ const products = [
     {
         id: 16,
         name: "منظف ارضيات 4*1  600 م",
-        price: 75,
+        price: 95,
         category: "المنظفات",
         image: ardyat2png,
       },
@@ -30,7 +30,7 @@ const products = [
       {
         id: 17,
         name: "منظف ارضيات 4*1 لتر",
-        price: 115,
+        price: 150,
         category: "المنظفات",
         image: ardyat1png,
       },
@@ -38,7 +38,7 @@ const products = [
       {
         id: 18,
         name: "شامبو سجاد ومفروشات عبوة لتر",
-        price: 100,
+        price: 140,
         category: "المنظفات",
         image: shamposegad1png,
       },
@@ -47,7 +47,7 @@ const products = [
       {
         id: 19,
         name: "شامبو سجاد و مفروشات نص لتر",
-        price: 65,
+        price: 95,
         category: "المنظفات",
         image: shamposegad2png,
       },
@@ -55,7 +55,7 @@ const products = [
       {
         id: 20,
         name: "ملمع الزجاج والكريستال عبوة 500 مل",
-        price: 60,
+        price: 100,
         category: "المنظفات",
         image: clearcrystalpng,
       },
@@ -63,7 +63,7 @@ const products = [
       {
         id: 21,
         name: "جل الغسيل برائحة التانجو أو الدوف أو الداونى  العبوة لتر",
-        price: 95,
+        price: 125,
         category: "المنظفات",
         image: gelgaseelpng,
       },
@@ -71,7 +71,7 @@ const products = [
       {
         id: 22,
         name: "جل غسيل المواعين الكريمى كيلو",
-        price: 70,
+        price: 110,
         category: "المنظفات",
         image: gelshoonpng,
       },
@@ -79,7 +79,7 @@ const products = [
       {
         id: 23,
         name: "منظف أفران وجريلات عبوة 600 مل",
-        price: 90,
+        price: 120,
         category: "المنظفات",
         image: kaherdhoonpng,
       },
@@ -87,7 +87,7 @@ const products = [
       {
         id: 24,
         name: "مسحوق الغسيل المركز للملابس البيضاء والألوان كيلو",
-        price: 125,
+        price: 180,
         category: "المنظفات",
         image: mashokalwanpng,
       },
@@ -95,7 +95,7 @@ const products = [
       {
         id: 25,
         name: "مسحوق غسالات الأطباق كيلو",
-        price: 160,
+        price: 185,
         category: "المنظفات",
         image: mashokshonpng,
       },
@@ -103,7 +103,7 @@ const products = [
       {
         id: 26,
         name: "منظف دهون خفيف عبوة 600 مل",
-        price: 75,
+        price: 110,
         category: "المنظفات",
         image: mozeeldhon50png,
       },
@@ -111,7 +111,7 @@ const products = [
       {
         id: 27,
         name: "مزيل بقع قوى المفروشات عبوة 250 مل",
-        price: 65,
+        price: 115,
         category: "المنظفات",
         image: mozeelmafroshatpng,
       },
@@ -119,7 +119,7 @@ const products = [
       {
         id: 28,
         name: "مزيل بقع الملابس الجديد عبوة 120 مل",
-        price: 65,
+        price: 110,
         category: "المنظفات",
         image: mozeelmlapespng,
       },
@@ -127,7 +127,7 @@ const products = [
       {
         id: 29,
         name: "مبيض للملابس البيضاء كيلو",
-        price: 105,
+        price: 175,
         category: "المنظفات",
         image: mshokapyadpng,
       },
@@ -135,7 +135,7 @@ const products = [
       {
         id: 30,
         name: "ملمع النحاس عبوة 250 مل",
-        price: 105,
+        price: 115,
         category: "المنظفات",
         image: nehaspng,
       },
@@ -143,7 +143,7 @@ const products = [
       {
         id: 31,
         name: "بودر تسليك الأحواض 350 جم",
-        price: 85,
+        price: 110,
         category: "المنظفات",
         image: paloaatpng,
       },
@@ -151,7 +151,7 @@ const products = [
       {
         id: 32,
         name: "منظف الحمامات عبوة 600 مل",
-        price: 90,
+        price: 125,
         category: "المنظفات",
         image: pathroompng,
       },
@@ -159,7 +159,7 @@ const products = [
       {
         id: 33,
         name: "ملمع الخشب عبوة 250 مل",
-        price: 85,
+        price: 115,
         category: "المنظفات",
         image: woodpng,
       },

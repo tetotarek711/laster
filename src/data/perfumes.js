@@ -14,7 +14,7 @@ const products = [
     {
         id: 34,
         name: "سيكريت 300م",
-        price: 50,
+        price: 80,
         category: "المعطرات",
         image: secrit2png,
       },
@@ -22,7 +22,7 @@ const products = [
       {
         id: 35,
         name: " معطر أريج الكعبة عبوة 300م",
-        price: 50,
+        price: 80,
         category: "المعطرات",
         image: areeg2png,
       },
@@ -30,7 +30,7 @@ const products = [
       {
         id: 36,
         name: "  معطر بيد روم عبوة لتر",
-        price: 130,
+        price: 150,
         category: "المعطرات",
         image: bedrom1png,
       },
@@ -38,7 +38,7 @@ const products = [
       {
         id: 37,
         name: "معطر بيدروم 300 مل",
-        price: 50,
+        price: 80,
         category: "المعطرات",
         image: bedrom2png,
       },
@@ -46,7 +46,7 @@ const products = [
       {
         id: 38,
         name: "معطر لاستر عبوة 500 مل",
-        price: 70,
+        price: 85,
         category: "المعطرات",
         image: laster12PNG,
       },
@@ -54,7 +54,7 @@ const products = [
       {
         id: 39,
         name: "معطر الحمام لاستر باث روم عبوة لتر",
-        price: 95,
+        price: 130,
         category: "المعطرات",
         image: pasrom1png,
       },
@@ -62,7 +62,7 @@ const products = [
       {
         id: 40,
         name: "معطر لاستر برينجو عبوة لتر",
-        price: 95,
+        price: 130,
         category: "المعطرات",
         image: prengo2png,
       },
@@ -70,7 +70,7 @@ const products = [
       {
         id: 41,
         name: "معطر برينجو للملابس عبوة 300 مل",
-        price: 50,
+        price: 80,
         category: "المعطرات",
         image: prengo2png,
       },
@@ -79,7 +79,7 @@ const products = [
     {
         id: 42,
         name: "معطر خام حليبى مركز نص لتر",
-        price: 80,
+        price: 135,
         category: "المعطرات",
         image: room2PNG,
       },
@@ -87,7 +87,7 @@ const products = [
       {
         id: 43,
         name: "معطر الرسيبشن لاستر سيكريت عبوة لتر",
-        price: 125,
+        price: 150,
         category: "المعطرات",
         image: secrit1png,
       },
@@ -95,7 +95,7 @@ const products = [
       {
         id: 44,
         name: "معطر سوار عبوة 300 مل",
-        price: 50,
+        price: 80,
         category: "المعطرات",
         image: soir2png,
       },
@@ -103,7 +103,7 @@ const products = [
       {
         id: 45,
         name: "معطر التوت البرى عبوة 300 مل ",
-        price: 50,
+        price: 80,
         category: "المعطرات",
         image: toot2png,
       },
