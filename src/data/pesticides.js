@@ -18,7 +18,7 @@ const products = [
   {
     id: 1,
     name: "مبيد عام للحشرات",
-    price: 130,
+    price: 150,
     category: "المبيدات",
     image: elnamlpng,
     description:`
@@ -43,7 +43,7 @@ const products = [
   {
     id: 2,
     name: "مبيد البق",
-    price: 110,
+    price: 150,
     category: "المبيدات",
     image: elpakpng,
     description: `للاستخدام الفعال لمبيد البق من لاستر (Luster) والقضاء النهائي على بق الفراش، اتبعي الخطوات التالية بعناية:
@@ -72,7 +72,7 @@ const products = [
   {
     id: 3,
     name: "مبيد النمل والصراصير",
-    price: 105,
+    price: 125,
     category: "المبيدات",
     image: sraserpng,
     description: `للاستخدام الفعال لمبيد الصراصير من لاستر (Luster) والقضاء على الصراصير نهائياً، اتبعي الخطوات التالية بدقة:
@@ -104,7 +104,7 @@ const products = [
   {
     id: 4,
     name: "مبيد الناموس",
-    price: 75,
+    price: 115,
     category: "المبيدات",
     image: elnamospng,
     description: `للاستخدام الفعال لمبيد الناموس من لاستر (Luster) والتخلص من الناموس والحشرات الطائرة، اتبعي الخطوات التالية:
@@ -132,7 +132,7 @@ const products = [
 {
     id: 5,
     name: "مبيد الذباب",
-    price: 75,
+    price: 120,
     category: "المبيدات",
     image: zopappng,
     description: `للاستخدام الفعال لمبيد الذباب من لاستر (Luster) والقضاء على الذباب والحشرات الطائرة، اتبعي الخطوات التالية:
@@ -161,7 +161,7 @@ const products = [
   {
     id: 6,
     name: "مبيد العثه",
-    price: 105,
+    price: 120,
     category: "المبيدات",
     image: aatapng,
     description: `للاستخدام الفعال لمبيد الذباب من لاستر (Luster) والقضاء على الذباب والحشرات الطائرة، اتبعي الخطوات التالية:
@@ -190,7 +190,7 @@ const products = [
   {
     id: 7,
     name: "بودرة عقارب 250 م",
-    price: 65,
+    price: 110,
     category: "المبيدات",
     image: akareppng,
     description: `للاستخدام الفعال لبودرة العقارب من لاستر (Luster) والقضاء على العقارب والحشرات الزاحفة، اتبعي الخطوات التالية بعناية:
@@ -219,7 +219,7 @@ const products = [
   {
     id: 8,
     name: "جل الابراص",
-    price: 80,
+    price: 120,
     category: "المبيدات",
     image: gelpng,
     description: `للاستخدام الفعال لجل الابراص من لاستر (Luster) والقضاء على الابراص (الوزغ) نهائياً، اتبعي الخطوات التالية:
@@ -248,7 +248,7 @@ const products = [
   {
     id: 9,
     name: "مبيد الابراص",
-    price: 80,
+    price: 115,
     category: "المبيدات",
     image: apraspng,
     description: `للاستخدام الفعال لمبيد الابراص من لاستر (Luster) والقضاء على الابراص (الوزغ) والحشرات الزاحفة، اتبعي الخطوات التالية:
@@ -277,7 +277,7 @@ const products = [
   {
     id: 10,
     name: "مبيد السوس",
-    price: 105,
+    price: 120,
     category: "المبيدات",
     image: sospng,
     description: `للاستخدام الفعال لمبيد السوس من لاستر (Luster) والقضاء على سوس الخشب والحبوب، اتبعي الخطوات التالية:
@@ -309,7 +309,7 @@ const products = [
   {
     id: 11,
     name: "مبيد العناكب",
-    price: 105,
+    price: 120,
     category: "المبيدات",
     image: anakeppng,
     description: `للاستخدام الفعال لمبيد العناكب من لاستر (Luster) والقضاء على العناكب والحشرات الزاحفة، اتبعي الخطوات التالية:
@@ -341,7 +341,7 @@ const products = [
   {
     id: 12,
     name: "مبيد القراض",
-    price: 105,
+    price: 120,
     category: "المبيدات",
     image: koradpng,
     description: `للاستخدام الفعال لمبيد القراد من لاستر (Luster) والقضاء على القراد والحشرات الزاحفة، اتبعي الخطوات التالية بعناية:
@@ -373,7 +373,7 @@ const products = [
   {
     id: 13,
     name: "مبيد السمكة الفضية",
-    price: 105,
+    price: 120,
     category: "المبيدات",
     image: fishpng,
     description: `للاستخدام الفعال لمبيد السمكة الفضية من لاستر (Luster) والقضاء على السمكة الفضية والحشرات الزاحفة، اتبعي الخطوات التالية:
@@ -405,7 +405,7 @@ const products = [
   {
     id: 14,
     name: "مبيد البراغيث والفاش والحشرات الغير مرئية",
-    price: 105,
+    price: 120,
     category: "المبيدات",
     image: pragetpng,
     description: `للاستخدام الفعال لمبيد البراغيث والفاش والحشرات غير المرئية من لاستر (Luster) والقضاء على الحشرات الدقيقة والزاحفة، اتبعي الخطوات التالية بعناية:
@@ -437,7 +437,7 @@ const products = [
   {
     id: 15,
     name: "عجينة الفئران بطعم الفراولة",
-    price: 50,
+    price: 80,
     category: "المبيدات",
     image: feranpng,
     description: `للاستخدام الفعال لعجينة الفئران من لاستر (Luster) والقضاء على الفئران والقوارض، اتبعي الخطوات التالية بعناية:
